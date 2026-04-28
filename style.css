@@ -1,0 +1,92 @@
+/* Core Terminal Aesthetics */
+body {
+    background-color: #0d0d0d; /* Slightly darker than 1a1a1a for better contrast */
+    color: #714498;           /* Your signature purple */
+    font-family: 'Courier New', Courier, monospace;
+    padding: 20px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.template-box {
+    border: 1px solid #714498;
+    padding: 40px;
+    max-width: 900px;
+    width: 100%;
+    box-shadow: 0 0 20px rgba(113, 68, 152, 0.2);
+    background: rgba(26, 26, 26, 0.9);
+}
+
+h1 {
+    text-align: center;
+    border-bottom: 1px solid #714498;
+    padding-bottom: 20px;
+    letter-spacing: 3px;
+}
+
+/* Label and Input Styling */
+label {
+    display: block;
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 0.85em;
+    text-transform: uppercase;
+    color: #a881cb; /* Lighter purple for labels to separate them from values */
+}
+
+input, textarea {
+    background: #111;
+    border: 1px solid #333;
+    border-left: 3px solid #714498; /* Adds a "sidebar" look to each field */
+    color: #ffffff;
+    width: 100%;
+    font-family: 'Courier New', monospace;
+    padding: 10px;
+    box-sizing: border-box; /* Prevents fields from stretching too wide */
+    margin-top: 5px;
+    outline: none;
+    transition: border 0.3s ease;
+}
+
+input:focus, textarea:focus {
+    border-color: #ffffff;
+    box-shadow: 0 0 5px #714498;
+}
+
+/* Organizing short fields into columns */
+.stats-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+/* Button Styling */
+button {
+    background-color: #714498;
+    color: #000;
+    border: none;
+    padding: 15px;
+    margin-top: 40px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100%;
+    letter-spacing: 2px;
+    font-family: 'Courier New', monospace;
+}
+
+button:hover {
+    background-color: #ffffff;
+    color: #714498;
+}
+
+/* Scrollbar styling for that old-school vibe */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #0d0d0d;
+}
+::-webkit-scrollbar-thumb {
+    background: #714498;
+}
