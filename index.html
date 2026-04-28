@@ -2,45 +2,104 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Universe Registry Terminal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNIVERSE REGISTRY</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <div class="template-box">
     <h1>UNIVERSE REGISTRY TERMINAL</h1>
-    <p>LOGGING NEW DATA TO THE VOID...</p>
+    <p style="text-align: center; font-size: 0.8em; margin-bottom: 30px;">[ STATUS: AWAITING INPUT ]</p>
     
     <form id="universeForm">
         <label>UNIVERSE ID:</label>
-        <input type="text" name="universeID" value="SWS-9898">
+        <input type="text" name="universeID" value="ORIGINAL">
 
         <label>NAME:</label>
-        <input type="text" name="universeName" value="Terraverse">
+        <input type="text" name="universeName">
 
-        <label>GRAVITY LEVEL:</label>
-        <input type="text" name="gravity" value="0.00000000006674">
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+            <div>
+                <label>GRAVITY LEVEL:</label>
+                <input type="text" name="gravity">
+                
+                <label>SPEED LIMIT:</label>
+                <input type="text" name="speedLimit">
+                
+                <label>ELECTROMAGNETISM LEVEL:</label>
+                <input type="text" name="electromagnetism">
+            </div>
+            <div>
+                <label>ATOMIC RATIO:</label>
+                <input type="text" name="atomicRatio">
+                
+                <label>NUCLEAR EFFICIENCY:</label>
+                <input type="text" name="nuclearEfficiency">
+                
+                <label>DENSITY PARAMETER:</label>
+                <input type="text" name="density">
+            </div>
+        </div>
+
+        <label>COSMOLOGICAL CONSTANT:</label>
+        <input type="text" name="cosmoConstant">
 
         <label>SPATIAL DIMENSIONS:</label>
-        <input type="text" name="dimensions" value="3 for humans, 98 total">
+        <input type="text" name="spatialDims">
 
-        <label>SHAPE:</label>
-        <input type="text" name="shape" value="Mobius strip">
+        <label>TIME LEVEL:</label>
+        <input type="text" name="timeLevel">
 
-        <label>REALITY MATERIAL:</label>
-        <input type="text" name="material" value="Wood">
+        <label>PIXEL SIZE / FRAME RATE:</label>
+        <input type="text" name="pixelFrame" placeholder="e.g. 1.855 × 10^43">
 
-        <label>AVERAGE COLOR:</label>
-        <input type="text" name="avgColor" value="#714498">
+        <label>ATOM SIZE:</label>
+        <input type="text" name="atomSize">
 
-        <label>DEFINITION NUMBER (POSSIBLE):</label>
-        <textarea name="defNumber" rows="4">984984984984...</textarea>
+        <label>AFTERLIFE? / GOD?:</label>
+        <input type="text" name="theology" placeholder="Yes/No | Describe">
 
-        <label>OFFICIAL CHESS GAME (PGN):</label>
-        <textarea name="chessGame" rows="5">1. Nf3 Nf6 2. Ng5 Ng4...</textarea>
+        <label>POSSIBLE THINGS:</label>
+        <textarea name="possible" rows="3"></textarea>
+
+        <label>INEVITABLE THINGS:</label>
+        <textarea name="inevitable" rows="3"></textarea>
+
+        <label>NOTABLE EVENTS:</label>
+        <textarea name="events" rows="3"></textarea>
+
+        <label>GALAXIES / STARS:</label>
+        <input type="text" name="celestialBodyCount">
+
+        <label>DIMENSIONS (W x H x L):</label>
+        <input type="text" name="volumeDims">
+
+        <label>SHAPE / LOGIC / MORALITY:</label>
+        <input type="text" name="foundations">
+
+        <label>BEGINNING / LIFESPAN:</label>
+        <input type="text" name="lifespan">
+
+        <label>AVERAGE COLOR / WORD:</label>
+        <input type="text" name="averages">
+
+        <label>DEFINITION NUMBER:</label>
+        <textarea name="definitionNumber" rows="4"></textarea>
+
+        <label>UNIVERSE CONSCIOUS? / QUALIFICATIONS:</label>
+        <textarea name="consciousness" rows="2"></textarea>
+
+        <label>FUNDAMENTAL FORCES / REALITY MATERIAL:</label>
+        <input type="text" name="materialForces">
+
+        <label>MAIN PLANET(S) / FIRST SPECIES:</label>
+        <input type="text" name="lifeData">
+
+        <hr style="border: 1px solid #714498; margin: 30px 0;">
 
         <label>CLAIMANT USERNAME:</label>
-        <input type="text" name="username" placeholder="IDENTIFY GOVERNOR">
+        <input type="text" name="claimant" placeholder="ENTER OPERATOR NAME" required>
 
         <button type="submit">SUBMIT AND CLAIM UNIVERSE</button>
     </form>
