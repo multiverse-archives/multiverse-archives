@@ -1,25 +1,51 @@
-<style>
-  body { background-color: #1a1a1a; color: #714498; font-family: 'Courier New', monospace; padding: 40px; }
-  .template-box { border: 1px solid #714498; padding: 20px; max-width: 800px; }
-  input { background: none; border: none; border-bottom: 1px dotted #714498; color: white; width: 100%; }
-  label { font-weight: bold; display: block; margin-top: 10px; }
-</style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Universe Registry Terminal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
 <div class="template-box">
-  <h1>UNIVERSE REGISTRY TERMINAL</h1>
-  <form id="universeForm">
-    <label>UNIVERSE ID:</label>
-    <input type="text" name="universeID" placeholder="e.g. SWS-9898">
+    <h1>UNIVERSE REGISTRY TERMINAL</h1>
+    <p>LOGGING NEW DATA TO THE VOID...</p>
     
-    <label>GRAVITY LEVEL:</label>
-    <input type="text" name="gravity" value="0.00000000006674">
-    
-    <label>REALITY MATERIAL:</label>
-    <input type="text" name="material" value="Wood">
-    
-    <label>CLAIMANT USERNAME:</label>
-    <input type="text" name="username" placeholder="Who governs this reality?">
-    
-    <button type="submit" style="margin-top:20px;">SUBMIT TO THE VOID</button>
-  </form>
+    <form id="universeForm">
+        <label>UNIVERSE ID:</label>
+        <input type="text" name="universeID" value="SWS-9898">
+
+        <label>NAME:</label>
+        <input type="text" name="universeName" value="Terraverse">
+
+        <label>GRAVITY LEVEL:</label>
+        <input type="text" name="gravity" value="0.00000000006674">
+
+        <label>SPATIAL DIMENSIONS:</label>
+        <input type="text" name="dimensions" value="3 for humans, 98 total">
+
+        <label>SHAPE:</label>
+        <input type="text" name="shape" value="Mobius strip">
+
+        <label>REALITY MATERIAL:</label>
+        <input type="text" name="material" value="Wood">
+
+        <label>AVERAGE COLOR:</label>
+        <input type="text" name="avgColor" value="#714498">
+
+        <label>DEFINITION NUMBER (POSSIBLE):</label>
+        <textarea name="defNumber" rows="4">984984984984...</textarea>
+
+        <label>OFFICIAL CHESS GAME (PGN):</label>
+        <textarea name="chessGame" rows="5">1. Nf3 Nf6 2. Ng5 Ng4...</textarea>
+
+        <label>CLAIMANT USERNAME:</label>
+        <input type="text" name="username" placeholder="IDENTIFY GOVERNOR">
+
+        <button type="submit">SUBMIT AND CLAIM UNIVERSE</button>
+    </form>
 </div>
+
+<script src="script.js"></script>
+</body>
+</html>
